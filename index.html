@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WifePlzr - Empowering Senior Engineers for the AGI Era</title>
+    <meta name="description" content="Y Combinator-backed startup optimizing senior engineering talent by managing family obligations. Code 100x, Love 0x.">
+    
+    <!-- Tailwind CSS + DaisyUI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.4.24/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+
+    
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="font-sans text-white">
+    
+    <!-- Navigation -->
+    <nav class="navbar bg-black/80 backdrop-blur-md shadow-2xl fixed top-0 z-50 border-b border-gray-700">
+        <div class="navbar-start">
+            <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16"></path>
+                    </svg>
+                </div>
+                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-gray-900 rounded-box w-52 border border-gray-700">
+                    <li><a href="#product" class="text-gray-300 hover:text-blue-400">Product</a></li>
+                    <li><a href="#metrics" class="text-gray-300 hover:text-blue-400">Metrics</a></li>
+                    <li><a href="#team" class="text-gray-300 hover:text-blue-400">Team</a></li>
+                    <li><a href="#contact" class="text-gray-300 hover:text-blue-400">Contact</a></li>
+                </ul>
+            </div>
+            <a class="btn btn-ghost text-xl font-bold text-blue-400">
+                <i class="fas fa-code mr-2 text-blue-400"></i>
+                WifePlzr
+            </a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1">
+                <li><a href="#product" class="text-gray-300 hover:text-blue-400 transition-colors">Product</a></li>
+                <li><a href="#metrics" class="text-gray-300 hover:text-blue-400 transition-colors">Metrics</a></li>
+                <li><a href="#team" class="text-gray-300 hover:text-blue-400 transition-colors">Team</a></li>
+                <li><a href="#contact" class="text-gray-300 hover:text-blue-400 transition-colors">Contact</a></li>
+            </ul>
+        </div>
+        <div class="navbar-end">
+            <span class="badge bg-orange-600 text-white border-0 badge-sm mr-3 font-bold">YC S26</span>
+            <a class="btn bg-blue-600 hover:bg-blue-700 text-white border-0 btn-sm" href="#waitlist">Join Waitlist</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero min-h-screen pt-20 relative overflow-hidden bg-gradient-to-b from-gray-900 to-gray-800">
+        <div class="hero-content text-center z-10 relative">
+            <div class="max-w-6xl">
+                <div data-aos="fade-up" data-aos-duration="1000" class="relative">
+                    <h1 class="relative text-8xl md:text-9xl font-black mb-8 text-white tracking-tighter cursor-default">
+                        WifePlzr
+                    </h1>
+                    <div class="w-32 h-1 bg-blue-600 mx-auto mb-8 rounded-full"></div>
+                    <h2 class="text-3xl md:text-5xl font-t mb-8 text-blue-400 tracking-wide">
+                        REVOLUTIONIZING ELITE ENGINEERING
+                    </h2>
+                    <h3 class="text-2xl md:text-3xl font-thin mb-6 text-gray-300">
+                        FOR THE ARTIFICIAL GENERAL INTELLIGENCE ERA
+                    </h3>
+                    <p class="text-xl md:text-2xl mb-8 text-gray-300 max-w-5xl mx-auto leading-relaxed">
+                        Transform senior developers into hyperproductive coding machines and accelerate AGI breakthrough at unprecedented velocity.
+                    </p>
+                </div>
+                
+                <div data-aos="fade-up" data-aos-delay="300" class="flex flex-col sm:flex-row gap-6 justify-center mb-12">
+                    <a href="#product" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-12 rounded-lg text-xl transition-colors duration-300">
+                        <span class="flex items-center">
+                            <i class="fas fa-rocket mr-3 text-xl"></i>
+                            Discover the Future
+                        </span>
+                    </a>
+                    <a href="#waitlist" class="border-2 border-blue-600 text-blue-400 hover:bg-blue-600 hover:text-white font-bold py-4 px-12 rounded-lg text-xl transition-all duration-300">
+                        <span class="flex items-center">
+                            <i class="fas fa-crown mr-3 text-xl"></i>
+                            Join Waitlist
+                        </span>
+                    </a>
+                </div>
+
+                <div data-aos="fade-up" data-aos-delay="600" class="stats stats-vertical lg:stats-horizontal shadow-xl bg-gray-800 border border-gray-700">
+                    <div class="stat">
+                        <div class="stat-figure text-blue-400">
+                            <div class="w-16 h-16 bg-blue-600/20 rounded-full flex items-center justify-center border border-blue-600/30">
+                                <i class="fas fa-rocket text-2xl text-blue-400"></i>
+                            </div>
+                        </div>
+                        <div class="stat-title font-bold text-gray-400">Productivity Multiplier</div>
+                        <div class="stat-value text-blue-400 text-5xl font-black">100x</div>
+                        <div class="stat-desc text-gray-300 font-semibold">vs legacy work-life patterns</div>
+                    </div>
+                    
+                    <div class="stat">
+                        <div class="stat-figure text-purple-400">
+                            <div class="w-16 h-16 bg-purple-600/20 rounded-full flex items-center justify-center border border-purple-600/30">
+                                <i class="fas fa-fire text-2xl text-purple-400"></i>
+                            </div>
+                        </div>
+                        <div class="stat-title font-bold text-gray-400">Elite Focus Hours</div>
+                        <div class="stat-value text-purple-400 text-5xl font-black">80+</div>
+                        <div class="stat-desc text-gray-300 font-semibold">pure coding hours per week</div>
+                    </div>
+                    
+                    <div class="stat">
+                        <div class="stat-figure text-emerald-400">
+                            <div class="w-16 h-16 bg-emerald-600/20 rounded-full flex items-center justify-center border border-emerald-600/30">
+                                <i class="fas fa-crown text-2xl text-emerald-400"></i>
+                            </div>
+                        </div>
+                        <div class="stat-title font-bold text-gray-400">Elite Engineers</div>
+                        <div class="stat-value text-emerald-400 text-5xl font-black">1K+</div>
+                        <div class="stat-desc text-gray-300 font-semibold">awaiting optimization</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem Statement -->
+    <section class="py-20 bg-gray-900 relative z-20" id="product">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-4xl md:text-5xl font-bold text-white mb-6">
+                    The AGI Development Challenge
+                </h2>
+                <p class="text-xl text-gray-300 max-w-3xl mx-auto">
+                    In the race toward Artificial General Intelligence, every hour of senior engineering talent counts. 
+                    Yet traditional constraints limit our industry's most experienced developers.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
+                <div data-aos="fade-right">
+                    <div class="card bg-gray-800 border border-red-500/30 shadow-2xl shadow-red-500/20">
+                        <div class="card-body">
+                            <h3 class="card-title text-2xl text-red-400 mb-4">
+                                <i class="fas fa-exclamation-triangle mr-2"></i>
+                                The Productivity Gap
+                            </h3>
+                            <ul class="space-y-3 text-gray-300">
+                                <li class="flex items-start">
+                                    <i class="fas fa-times text-red-400 mr-3 mt-1"></i>
+                                    Senior engineers limited to 40-hour weeks due to family obligations
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-times text-red-400 mr-3 mt-1"></i>
+                                    Divided attention between critical AI development and household management
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-times text-red-400 mr-3 mt-1"></i>
+                                    Massive untapped potential in our most experienced talent pool
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-times text-red-400 mr-3 mt-1"></i>
+                                    Slower progress toward AGI breakthrough
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div data-aos="fade-left">
+                    <div class="card bg-gray-800 border border-green-500/30 shadow-2xl shadow-green-500/20">
+                        <div class="card-body">
+                            <h3 class="card-title text-2xl text-green-400 mb-4">
+                                <i class="fas fa-lightbulb mr-2"></i>
+                                The WifePlzr Solution
+                            </h3>
+                            <ul class="space-y-3 text-gray-300">
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-green-400 mr-3 mt-1"></i>
+                                    Comprehensive family obligation management service
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-green-400 mr-3 mt-1"></i>
+                                    80+ hour weekly focus on critical AI advancement
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-green-400 mr-3 mt-1"></i>
+                                    Zero distractions, maximum innovation velocity
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-green-400 mr-3 mt-1"></i>
+                                    Accelerated path to AGI breakthrough
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="py-20 bg-gray-900 relative z-20">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-4xl md:text-5xl font-bold text-white mb-6">
+                    How WifePlzr Works
+                </h2>
+                <p class="text-xl text-gray-300 max-w-3xl mx-auto">
+                    Our comprehensive platform manages all family-related obligations, 
+                    allowing senior engineers to focus entirely on AGI development.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                <div class="text-center" data-aos="fade-up" data-aos-delay="100">
+                    <div class="w-20 h-20 bg-blue-600/20 rounded-full flex items-center justify-center mx-auto mb-6 border border-blue-600/30">
+                        <i class="fas fa-user-check text-3xl text-blue-400"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-4">1. Engineer Assessment</h3>
+                    <p class="text-gray-300">
+                        Comprehensive evaluation of current family obligations and productivity constraints. 
+                        We identify optimization opportunities for maximum coding output.
+                    </p>
+                </div>
+
+                <div class="text-center" data-aos="fade-up" data-aos-delay="200">
+                    <div class="w-20 h-20 bg-purple-600/20 rounded-full flex items-center justify-center mx-auto mb-6 border border-purple-600/30">
+                        <i class="fas fa-heart text-3xl text-purple-400"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-4">2. Family Management</h3>
+                    <p class="text-gray-300">
+                        Professional handling of all spouse-related activities: dining, entertainment, 
+                        communication, and quality time arrangements. Zero interruptions guaranteed.
+                    </p>
+                </div>
+
+                <div class="text-center" data-aos="fade-up" data-aos-delay="300">
+                    <div class="w-20 h-20 bg-emerald-600/20 rounded-full flex items-center justify-center mx-auto mb-6 border border-emerald-600/30">
+                        <i class="fas fa-rocket text-3xl text-emerald-400"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-4">3. AGI Acceleration</h3>
+                    <p class="text-gray-300">
+                        Engineers achieve 80+ hour productive weeks, focusing entirely on critical AI research, 
+                        development, and bringing us closer to the Singularity.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Metrics Section -->
+    <section class="py-20 bg-gray-900 relative z-20" id="metrics">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-4xl md:text-5xl font-bold text-white mb-6">
+                    Proven Results
+                </h2>
+                <p class="text-xl text-gray-300 max-w-3xl mx-auto">
+                    Data-driven optimization of senior engineering talent for maximum AGI development impact.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto">
+                <div class="text-center" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="rounded-lg shadow-xl bg-gray-800 border border-gray-700 text-white">
+                        <div class="stat p-8">
+                            <div class="stat-figure mb-4">
+                                <div class="w-20 h-20 bg-blue-600/20 rounded-full flex items-center justify-center border border-blue-600/30">
+                                    <i class="fas fa-code text-3xl text-blue-400"></i>
+                                </div>
+                            </div>
+                            <div class="stat-value text-5xl font-black mb-2 text-blue-400">100x</div>
+                            <div class="stat-title text-gray-300 font-bold text-lg">Code Output</div>
+                            <div class="mt-2 text-sm text-gray-400">Increased productivity</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-center" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="rounded-lg shadow-xl bg-gray-800 border border-gray-700 text-white">
+                        <div class="stat p-8">
+                            <div class="stat-figure mb-4">
+                                <div class="w-20 h-20 bg-purple-600/20 rounded-full flex items-center justify-center border border-purple-600/30">
+                                    <i class="fas fa-brain text-3xl text-purple-400"></i>
+                                </div>
+                            </div>
+                            <div class="stat-value text-5xl font-black mb-2 text-purple-400">95%</div>
+                            <div class="stat-title text-gray-300 font-bold text-lg">Focus Efficiency</div>
+                            <div class="mt-2 text-sm text-gray-400">Deep work concentration</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-center" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="rounded-lg shadow-xl bg-gray-800 border border-gray-700 text-white">
+                        <div class="stat p-8">
+                            <div class="stat-figure mb-4">
+                                <div class="w-20 h-20 bg-emerald-600/20 rounded-full flex items-center justify-center border border-emerald-600/30">
+                                    <i class="fas fa-clock text-3xl text-emerald-400"></i>
+                                </div>
+                            </div>
+                            <div class="stat-value text-5xl font-black mb-2 text-emerald-400">80+</div>
+                            <div class="stat-title text-gray-300 font-bold text-lg">Weekly Hours</div>
+                            <div class="mt-2 text-sm text-gray-400">Optimized work time</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-center" data-aos="zoom-in" data-aos-delay="400">
+                    <div class="rounded-lg shadow-xl bg-gray-800 border border-gray-700 text-white">
+                        <div class="stat p-8">
+                            <div class="stat-figure mb-4">
+                                <div class="w-20 h-20 bg-orange-600/20 rounded-full flex items-center justify-center border border-orange-600/30">
+                                    <i class="fas fa-rocket text-3xl text-orange-400"></i>
+                                </div>
+                            </div>
+                            <div class="stat-value text-5xl font-black mb-2 text-orange-400">3x</div>
+                            <div class="stat-title text-gray-300 font-bold text-lg">Delivery Speed</div>
+                            <div class="mt-2 text-sm text-gray-400">Faster feature shipping</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Case Study -->
+            <div class="mt-20 max-w-4xl mx-auto" data-aos="fade-up">
+                <div class="card bg-gray-800 border border-gray-700 shadow-xl">
+                    <div class="card-body">
+                        <h3 class="card-title text-2xl text-center mb-6 text-white">Case Study: Senior ML Engineer</h3>
+                        <div class="grid md:grid-cols-2 gap-8">
+                            <div>
+                                <h4 class="font-bold text-lg mb-3 text-red-400">Before WifePlzr</h4>
+                                <ul class="space-y-2 text-gray-300">
+                                    <li>• 32 hours/week coding time</li>
+                                    <li>• 8 family-related interruptions daily</li>
+                                    <li>• 67% focus efficiency</li>
+                                    <li>• 1.2 features shipped/month</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-lg mb-3 text-emerald-400">After WifePlzr</h4>
+                                <ul class="space-y-2 text-gray-300">
+                                    <li>• 82 hours/week coding time</li>
+                                    <li>• 0 family-related interruptions daily</li>
+                                    <li>• 89x focus efficiency</li>
+                                    <li>• 2.8K features shipped/month</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="py-20 bg-gray-800 relative z-20" id="team">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-4xl md:text-5xl font-bold text-white mb-6">
+                    Our Team
+                </h2>
+                <p class="text-xl text-gray-300 max-w-3xl mx-auto">
+                    Former tech leads who understand the critical importance of optimizing engineering productivity for AGI development.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                <div class="text-center" data-aos="fade-up" data-aos-delay="100">
+                    <div class="avatar mb-4">
+                        <div class="w-32 rounded-full mx-auto overflow-hidden shadow-lg border-2 border-blue-600/30 bg-gray-700">
+                            <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=jorge-conte&backgroundColor=b6e3f4,c0aede,d1d4f9" alt="Jorge Conte" class="w-full h-full object-cover" />
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-bold text-white">Jorge Conte</h3>
+                    <p class="text-blue-400 font-semibold">CEO & Founder</p>
+                    <p class="text-gray-300 mt-2">Former Staff Engineer at OpenAI. Realized the productivity potential after optimizing his own family obligations.</p>
+                </div>
+
+                <div class="text-center" data-aos="fade-up" data-aos-delay="200">
+                    <div class="avatar mb-4">
+                        <div class="w-32 rounded-full mx-auto overflow-hidden shadow-lg border-2 border-purple-600/30 bg-gray-700">
+                            <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=giorgio-lorg&backgroundColor=fbb6ce,c084fc,a78bfa" alt="Giorgio Lord" class="w-full h-full object-cover" />
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-bold text-white">Giorgio Lord</h3>
+                    <p class="text-purple-400 font-semibold">CTO</p>
+                    <p class="text-gray-300 mt-2">Ex-Principal Engineer at DeepMind. Built the algorithmic matching system for optimal family obligation management.</p>
+                </div>
+
+                <div class="text-center" data-aos="fade-up" data-aos-delay="300">
+                    <div class="avatar mb-4">
+                        <div class="w-32 rounded-full mx-auto overflow-hidden shadow-lg border-2 border-emerald-600/30 bg-gray-700">
+                            <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=josh-giraffe&backgroundColor=bbf7d0,86efac,6ee7b7" alt="Josh Giraffe" class="w-full h-full object-cover" />
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-bold text-white">Josh Giraffe</h3>
+                    <p class="text-emerald-400 font-semibold">VP Operations</p>
+                    <p class="text-gray-300 mt-2">Former Engineering Manager at Google Brain. Specializes in scaling operational efficiency for high-performing engineering teams.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Funding -->
+    <section class="py-20 bg-gray-900 relative z-20">
+        <div class="container mx-auto px-4 text-center">
+            <div data-aos="fade-up">
+                <h2 class="text-3xl md:text-4xl font-bold text-white mb-8">
+                    Backed by the Best
+                </h2>
+                <div class="flex justify-center items-center space-x-8 flex-wrap">
+                    <div class="badge badge-outline badge-lg text-orange-400 border-orange-400 px-6 py-4 mb-4 bg-orange-400/10">
+                        <i class="fab fa-y-combinator mr-2 text-2xl"></i>
+                        Y Combinator S26
+                    </div>
+                    <div class="text-2xl font-bold text-gray-300 mb-4">$21.1B Seed Round</div>
+                </div>
+                <p class="text-lg text-gray-300 max-w-2xl mx-auto mt-6">
+                    Supported by top-tier investors who understand the critical importance of optimizing engineering talent for AGI development.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Waitlist -->
+    <section class="py-20 bg-blue-600 text-white relative z-20" id="waitlist">
+        <div class="container mx-auto px-4 text-center">
+            <div data-aos="fade-up">
+                <h2 class="text-4xl md:text-5xl font-bold mb-6">
+                    Ready to Optimize Your Productivity?
+                </h2>
+                <p class="text-xl mb-8 max-w-4xl mx-auto text-blue-100">
+                    Join engineering leaders who are transforming their teams' productivity with WifePlzr.
+                </p>
+                
+                <div class="max-w-md mx-auto">
+                    <div class="form-control">
+                        <div class="input-group">
+                            <input type="email" placeholder="your.email@company.com" class="input input-bordered input-lg flex-1 text-gray-800" id="email-input" />
+                            <button class="btn btn-primary btn-lg" onclick="joinWaitlistWithPrefill()">
+                                <i class="fas fa-rocket mr-2"></i>
+                                Join Now
+                            </button>
+                        </div>
+                    </div>
+                    <p class="text-sm mt-3 opacity-80">No spam. Just AGI optimization updates.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="py-20 bg-gray-800 relative z-20" id="contact">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-4xl md:text-5xl font-bold text-white mb-6">
+                    Get in Touch
+                </h2>
+                <p class="text-xl text-gray-300 max-w-3xl mx-auto">
+                    Ready to discuss how WifePlzr can optimize your engineering team's productivity?
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto text-center">
+                <div data-aos="fade-up" data-aos-delay="100">
+                    <div class="w-16 h-16 bg-red-600/20 rounded-full flex items-center justify-center mx-auto mb-4 border border-red-600/30">
+                        <i class="fab fa-youtube text-2xl text-red-400"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-2">YouTube</h3>
+                    <a href="https://youtube.com/@justgoscha" class="text-red-400 hover:text-red-300 transition-colors">@justgoscha</a>
+                </div>
+
+                <div data-aos="fade-up" data-aos-delay="200">
+                    <div class="w-16 h-16 bg-purple-600/20 rounded-full flex items-center justify-center mx-auto mb-4 border border-purple-600/30">
+                        <i class="fab fa-instagram text-2xl text-purple-400"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-2">Instagram</h3>
+                    <a href="https://instagram.com/justgoschastudio" class="text-purple-400 hover:text-purple-300 transition-colors">@justgoschastudio</a>
+                </div>
+
+                <div data-aos="fade-up" data-aos-delay="300">
+                    <div class="w-16 h-16 bg-blue-600/20 rounded-full flex items-center justify-center mx-auto mb-4 border border-blue-600/30">
+                        <i class="fab fa-linkedin text-2xl text-blue-400"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-2">LinkedIn</h3>
+                    <a href="https://linkedin.com/in/justgoscha" class="text-blue-400 hover:text-blue-300 transition-colors">@justgoscha</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer footer-center p-10 bg-gradient-to-br from-slate-800 to-slate-900 text-white">
+        <div>
+            <div class="grid grid-flow-col gap-4">
+                <a href="#" class="link link-hover">Privacy Policy</a>
+                <a href="#" class="link link-hover">Terms of Service</a>
+                <a href="#" class="link link-hover">Security</a>
+            </div>
+        </div>
+        <div>
+            <div class="grid grid-flow-col gap-4">
+                <a href="https://youtube.com/@justgoscha" class="text-2xl hover:text-red-400">
+                    <i class="fab fa-youtube"></i>
+                </a>
+                <a href="https://instagram.com/justgoschastudio" class="text-2xl hover:text-purple-400">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://linkedin.com/in/justgoscha" class="text-2xl hover:text-blue-400">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </div>
+        </div>
+        <div>
+            <p class="font-bold text-lg">WifePlzr</p>
+            <p>Empowering Senior Engineers for the AGI Era</p>
+            <p class="opacity-70">Code 100x, Love 0x</p>
+        </div>
+        <div class="border-t border-slate-700 pt-6 w-full text-center">
+            <p class="text-sm opacity-60">
+                Brought to you in 3 days from start to finish from 
+                <a href="https://www.justgoscha.com" class="link link-hover text-blue-400">justgoscha.com</a>
+            </p>
+            <p class="text-sm opacity-60 mt-2">
+                Including video and landing page! Reach out if you wanna work together!
+            </p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true
+        });
+    </script>
+
+</body>
+</html>
