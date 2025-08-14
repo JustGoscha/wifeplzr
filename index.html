@@ -27,8 +27,8 @@
     <!-- Navigation -->
     <nav class="navbar bg-black/80 backdrop-blur-md shadow-2xl fixed top-0 z-50 border-b border-gray-700">
         <div class="navbar-start">
-            <div class="dropdown">
-                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+            <div class="dropdown hidden lg:block">
+                <div tabindex="0" role="button" class="btn btn-ghost">
                     <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16"></path>
                     </svg>
@@ -63,14 +63,15 @@
 
     <!-- Hero Section -->
     <section class="hero min-h-screen pt-20 relative overflow-hidden bg-gradient-to-b from-gray-900 to-gray-800">
+        <div id="hero-bg" class="absolute inset-0 z-0 pointer-events-none"></div>
         <div class="hero-content text-center z-10 relative">
             <div class="max-w-6xl">
                 <div data-aos="fade-up" data-aos-duration="1000" class="relative">
-                    <h1 class="relative text-8xl md:text-9xl font-black mb-8 text-white tracking-tighter cursor-default">
+                    <h1 class="relative text-8xl md:text-9xl font-regular mb-8 text-white tracking-wide cursor-default">
                         WifePlzr
                     </h1>
                     <div class="w-32 h-1 bg-blue-600 mx-auto mb-8 rounded-full"></div>
-                    <p class="text-xl md:text-2xl mb-8 text-gray-300 max-w-5xl mx-auto leading-relaxed">
+                    <p class="text-xl md:text-2xl mb-8 text-gray-300 max-w-5xl mx-auto leading-relaxed font-thin">
                         Transform senior developers into hyperproductive coding machines and accelerate AGI breakthrough at unprecedented velocity.
                     </p>
                 </div>
@@ -548,6 +549,9 @@
     </footer>
 
     <!-- JavaScript -->
+    <script src="https://unpkg.com/three@0.158.0/build/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.globe.min.js"></script>
+    <script src="hero-visualization.js"></script>
     <script src="script.js"></script>
     <script>
         // Initialize AOS

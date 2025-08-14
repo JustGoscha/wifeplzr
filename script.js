@@ -1,41 +1,18 @@
 // WifePlzr Landing Page JavaScript
 
-// Global variables
-let scene, camera, renderer, particles;
-let mouseX = 0, mouseY = 0;
+// Global variables for non-visual features (visualization moved to hero-visualization.js)
 let windowHalfX, windowHalfY;
 
 // Initialize everything when DOM is loaded
 document.addEventListener('DOMContentLoaded', function() {
-    // Removed 3D background for better performance and simplicity
+    if (window.initHeroVisualization) window.initHeroVisualization();
     initSimpleAnimations();
     initBasicInteractions();
     initScrollEffects();
     initCounters();
 });
 
-// Removed Three.js 3D background for simplicity
-
-// Removed particle system
-
-// Removed floating shapes
-
-// Removed 3D animation loop
-
-function onWindowResize() {
-    windowHalfX = window.innerWidth / 2;
-    windowHalfY = window.innerHeight / 2;
-
-    camera.aspect = window.innerWidth / window.innerHeight;
-    camera.updateProjectionMatrix();
-
-    renderer.setSize(window.innerWidth, window.innerHeight);
-}
-
-function onDocumentMouseMove(event) {
-    mouseX = (event.clientX - windowHalfX) * 0.1;
-    mouseY = (event.clientY - windowHalfY) * 0.1;
-}
+// (Visualization init is moved to hero-visualization.js)
 
 // Simple animations
 function initSimpleAnimations() {
