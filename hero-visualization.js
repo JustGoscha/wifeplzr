@@ -28,10 +28,10 @@
             minWidth: 500.00,
             scale: 1.0,
             scaleMobile: 1.0,
-            backgroundColor: 0x000000,
+            backgroundColor: 0x23153c,
             backgroundAlpha: 0.0,
-            color: 0x3b82f6, // ocean/lines color (blue-500)
-            color2: 0x93c5fd, // secondary lines color (blue-300)
+            color: 0x4b84c3, // ocean/lines color (blue-500)
+            color2: 0xacfff3, // secondary lines color (blue-300)
             size: 0.6
         });
 
